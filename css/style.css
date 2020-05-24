@@ -177,7 +177,9 @@ body{
 
 /* ================== FOOTER STYLE ===================== */
 .page-footer{
-  background: #111111;
+  background: #111119;
+  padding-bottom: 10px;
+  box-sizing: border-box;
 }
 .page-footer>.wrapper::after{
   content: '.';
@@ -189,11 +191,39 @@ body{
 }
 .footer-col{
   float: left;
+  width: 25%;
 }
 .footer-col>h3{
   text-transform: uppercase;
   margin-top: 10px;
 }
 .footer-col>h3::after{
+  content: '.';
+  font-size: 0px;
+  height: 1px;
+  width: 94%;
+  background-color: grey;
+  display: block;
+  margin:10px 0;
+}
+.footer-col li{
+  line-height: 1.6;
+}
+.social li{
+  display: inline-block;
+}
+.social a{
+  background: #000;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  line-height: 44px;
 
+}
+.copyright{
+  color: #585858;
+  margin-top: 30px;
 }
