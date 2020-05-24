@@ -1,0 +1,199 @@
+/* ==================CSS RESET===================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ================== BASE STYLE ===================== */
+
+body{
+  color:#fff;
+  font-family: "Calibri",Arial,sans-serif;
+  font-size: 15px;
+
+}
+.wrapper{
+  width: 1120px;
+  height:100%;
+  margin: 0 auto;
+}
+
+/* ================== HEADER STYLE ===================== */
+.page-header{
+  height: 66px;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.page-header .logo{
+  float: left;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.page-header .main-nav{
+  float: right;
+}
+.main-nav li{
+  float: left;
+  margin-left: 60px;
+}
+.main-nav li a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  line-height: 66px;
+}
+
+/* ================== MAIN STYLE ===================== */
+.banner{
+  background-image: url('../images/banner.png');
+  background-size: cover;
+  height: 500px;
+  padding-top: 230px;
+  box-sizing: border-box;
+}
+.banner-block{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  font-weight:  bold;
+  text-align: center;
+}
+.banner-block h1{
+  text-transform: uppercase;
+
+}
+.subtitle{
+  font-size: 21px;
+  font-weight: 300;
+}
+.banner a{
+  display: inline-block;
+  background-color: #ca0500;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  width: 166px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.page-article{
+  background: rgb(0,0,0); /* Old browsers */
+  background: -moz-linear-gradient(-5deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-5deg, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(98deg, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.page-article>.wrapper::after{
+  content: '.';
+  font-size: 0px;
+  height: 1px;
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+.article-content{
+  width: 50%;
+  float: left;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+.article-content:first-of-type{
+  padding-right: 65px;
+  box-sizing: border-box;
+}
+.article-content:last-of-type{
+  padding-left: 65px;
+  box-sizing: border-box;
+  color: #000;
+}
+.article-content>h2{
+  font-size: 36px;
+}
+.article-content>h2::after{
+  content: '.';
+  font-size: 0px;
+  height: 3px;
+  width: 45px;
+  background-color: red;
+  display: block;
+  margin: 25px 0;
+}
+.quote{
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.text{
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+/* ================== FOOTER STYLE ===================== */
+.page-footer{
+  background: #111111;
+}
+.page-footer>.wrapper::after{
+  content: '.';
+  font-size: 0px;
+  height: 1px;
+  width: 100%;
+  display: block;
+  clear: both;
+}
+.footer-col{
+  float: left;
+}
+.footer-col>h3{
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.footer-col>h3::after{
+
+}
