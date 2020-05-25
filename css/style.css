@@ -79,6 +79,9 @@ body{
   float: left;
   margin-left: 60px;
 }
+.main-nav li a:hover{
+	color: red;
+}
 .main-nav li a{
   text-transform: uppercase;
   text-decoration: none;
@@ -120,6 +123,9 @@ body{
   width: 166px;
   font-size: 14px;
   margin-top: 10px;
+}
+.banner a:hover{
+	box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
 }
 .page-article{
   background: rgb(0,0,0); /* Old browsers */
@@ -208,6 +214,10 @@ body{
 }
 .footer-col li{
   line-height: 1.6;
+	color: grey;
+}
+.footer-col li:hover{
+  color: white;
 }
 .social li{
   display: inline-block;
@@ -222,6 +232,10 @@ body{
   text-align: center;
   line-height: 44px;
 
+}
+.social a:hover{
+	background-color: white;
+	color: red;
 }
 .copyright{
   color: #585858;
